@@ -8,8 +8,9 @@ public class Robot1 {
 	}
 	
 	public void move(int distance) {
+		System.out.println("----------Preparing Move-------------");
 		int distanceMoved = 0;
-		
+		System.out.println("Preparing to move " + distance + " units");
 		while(distance > 0){
 			if (batteryCharge == 0){
 				System.out.println("Out of charge. No more movement possible");
@@ -23,5 +24,6 @@ public class Robot1 {
 		}
 		System.out.println("Moved a total of " + distanceMoved + " units in this move");
 		System.out.println("Battery charge level is " + batteryCharge);
+		System.out.println("----------Move Over-------------");
 	}
 }
